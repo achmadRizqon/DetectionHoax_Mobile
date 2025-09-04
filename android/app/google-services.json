@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "640880716237",
+    "project_id": "hoaxuser",
+    "storage_bucket": "hoaxuser.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:640880716237:android:ebc1e392db765260b2fc84",
+        "android_client_info": {
+          "package_name": "com.example.haha"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgm6EIeJZgm8lxXEdrH-8jSBwQa1bSjrQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

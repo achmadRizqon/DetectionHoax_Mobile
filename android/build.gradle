@@ -1,0 +1,37 @@
+// File: android/build.gradle
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+
+    dependencies {
+        // Update Android Gradle Plugin to 8.2.1 or above
+        classpath("com.android.tools.build:gradle:8.2.1") // Latest AGP version
+        classpath("com.google.gms:google-services:4.4.2") // Firebase Google Services
+        classpath("com.google.firebase:firebase-crashlytics-gradle:3.0.3") // Firebase Crashlytics
+        classpath("com.google.firebase:perf-plugin:1.4.2") // Firebase Performance Monitoring
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+// Set the build directory to avoid conflicts
+rootProject.buildDir = "../build"
+
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+    project.evaluationDependsOn(":app")
+}
+
+// Ensure there are no errors when running the "clean" task
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
