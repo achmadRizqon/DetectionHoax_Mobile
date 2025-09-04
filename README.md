@@ -1,4 +1,4 @@
-# haha
+# DetectionHoax
 
 A new Flutter project.
 
