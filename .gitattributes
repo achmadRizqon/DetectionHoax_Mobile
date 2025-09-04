@@ -1,0 +1,10 @@
+# Force Dart files to be recognized
+*.dart linguist-language=Dart
+
+# Ignore platform boilerplate from stats
+android/* linguist-vendored
+ios/* linguist-vendored
+linux/* linguist-vendored
+macos/* linguist-vendored
+windows/* linguist-vendored
+web/* linguist-vendored
